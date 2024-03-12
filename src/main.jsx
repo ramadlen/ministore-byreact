@@ -13,11 +13,11 @@ import store from "./redux/store.js";
 import DarkModeContextProvider from "./context/DarkMode.jsx";
 import { TotalPriceProvider } from "./context/TotalPriceContext.jsx";
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <>Hallo sayang, Gimana Pagi nyaman gak?</>,
-    errorElement: <ErrorPage />,
-  },
+  // {
+  //   path: "/",
+  //   element: <>Hallo sayang, Gimana Pagi nyaman gak?</>,
+  //   errorElement: <ErrorPage />,
+  // },
   {
     path: "/login",
     element: <LoginPage />,
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/products",
+    element: <ProductsPage />,
+  },
+  {
+    path: "/",
     element: <ProductsPage />,
   },
   {
